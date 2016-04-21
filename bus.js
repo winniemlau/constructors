@@ -9,10 +9,10 @@ var Bus = function(driverName, color, gas){
 		this.studentOnTheBus.push(new Student(n,g,gr,GPA,d,sic,cp));
 	};
 	this.busChatter = function(){
-		for(i=0;i<this.studentOnTheBus.length;i++){
-			console.log(this.studentOnTheBus())
+		for(var i=0;i<this.studentOnTheBus.length;i++){
+			console.log(this.studentOnTheBus[i].catchPhrase);
 		}
 	}
-}
+};
 
 module.exports = Bus;
